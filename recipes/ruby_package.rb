@@ -8,7 +8,9 @@ when 'ubuntu'
     key 'C3173AA6'
   end
 
-  %w(ruby1.9.3 ruby-switch).each do |ruby_package|
+  %w(ruby rubygems ruby1.9.3 ruby-switch).each do |ruby_package|
     package ruby_package
   end
+
+  execute 'ruby-switch --set ruby1.9.1'
 end
