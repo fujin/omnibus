@@ -13,5 +13,6 @@ when 'ubuntu'
   end
 
   execute 'ruby-switch --set ruby1.9.1'
-  gem 'bundler'
+
+  gem_package 'bundler'
 end
