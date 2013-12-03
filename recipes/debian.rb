@@ -30,6 +30,7 @@ include_recipe "git"
   libtool
   shtool
   pkg-config
+  autoconf2.13
 }.each do |pkg|
 
   package pkg
