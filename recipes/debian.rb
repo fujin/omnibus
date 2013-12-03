@@ -27,6 +27,8 @@ include_recipe "git"
   libxml2-dev
   libxslt1.1
   libxslt1-dev
+  libtool
+  shtool
 }.each do |pkg|
 
   package pkg
