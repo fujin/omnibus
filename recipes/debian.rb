@@ -29,6 +29,7 @@ include_recipe "git"
   libxslt1-dev
   libtool
   shtool
+  pkg-config
 }.each do |pkg|
 
   package pkg
